@@ -1,3 +1,5 @@
+[![](https://jitci.com/gh/EinfachGustaf/namemc-api-kt/svg)](https://jitci.com/gh/EinfachGustaf/namemc-api-kt)
+
 # namemc-api-kt
 An easy to use api for Kotlin interacting with [NameMC](https://namemc.com)
 
@@ -19,4 +21,18 @@ suspend fun main() {
 
     println(hasPlayerLiked)
 }
+```
+
+## Dependencies
+```kotlin
+
+repositories {
+    maven("https://jitpack.io")
+}
+
+dependencies {
+    testImplementation("org.jetbrains.kotlin:kotlin-test")
+    implementation("com.github.EinfachGustaf:namemc-api-kt:Tag")
+}
+
 ```

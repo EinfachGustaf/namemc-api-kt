@@ -1,8 +1,11 @@
+import java.util.*
+
 val ktorVersion = "2.3.7"
 
 plugins {
     kotlin("jvm") version "1.9.22"
     kotlin("plugin.serialization") version "1.9.22"
+    id("maven-publish")
 }
 
 group = "live.einfachgustaf"
@@ -23,4 +26,21 @@ tasks.test {
 }
 kotlin {
     jvmToolchain(21)
+}
+
+val output by tasks.registering(Jar::class) {
+    archiveClassifier.set("jar")
+}
+
+publishing {
+    publications {
+        create<MavenPublication>(project.name) {
+            from(components["java"])
+            artifact(output)
+
+            this.groupId = project.group.toString()
+            this.artifactId = project.name.lowercase(Locale.getDefault())
+            this.version = version
+        }
+    }
 }

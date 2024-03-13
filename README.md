@@ -3,7 +3,7 @@
 # namemc-api-kt
 An easy to use api for Kotlin interacting with [NameMC](https://namemc.com)
 
-## example
+## Example
 ```kotlin
 import live.einfachgustaf.namemc.NameMcApiImpl
 import live.einfachgustaf.namemc.api.NameMcApi
@@ -31,7 +31,6 @@ repositories {
 }
 
 dependencies {
-    testImplementation("org.jetbrains.kotlin:kotlin-test")
     implementation("com.github.EinfachGustaf:namemc-api-kt:Tag")
 }
 

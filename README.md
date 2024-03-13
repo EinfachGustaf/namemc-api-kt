@@ -1,5 +1,5 @@
 # namemc-api-kt
-An easy to use api for interacting with [NameMC](https://namemc.com)
+An easy to use api for Kotlin interacting with [NameMC](https://namemc.com)
 
 ## example
 ```kotlin

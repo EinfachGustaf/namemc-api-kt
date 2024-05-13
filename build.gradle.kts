@@ -3,7 +3,7 @@ import java.util.*
 val ktorVersion = "2.3.7"
 
 plugins {
-    kotlin("jvm") version "1.9.23"
+    kotlin("jvm") version "1.9.24"
     kotlin("plugin.serialization") version "1.9.23"
     id("maven-publish")
 }
